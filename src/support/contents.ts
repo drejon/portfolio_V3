@@ -1,80 +1,79 @@
 export const technologies = [
     {
       title: 'React',
-      svgPath: './src/assets/react.svg'
-      // svgPath: './assets/react.svg'
+      svgPath: 'assets/react.svg'
     },
-    // {
-    //   title: 'Angular',
-    //   svgPath: 'assets/angular.svg'
-  
-    // },
-    // {
-    //   title: 'Django',
-    //   svgPath: 'assets/django.svg'
-    // },
-    // {
-    //   title: 'NodeJs',
-    //   svgPath: 'assets/nodejs.svg'
-    // },
-    // {
-    //   title: 'TypeScript',
-    //   svgPath: 'assets/typescript.svg'
-    // },
-    // {
-    //   title: 'JavaScript',
-    //   svgPath: 'assets/javascript.svg'
-    // },
-    // {
-    //   title: 'Java',
-    //   svgPath: 'assets/java.svg'
-    // },
-    // {
-    //   title: 'Python',
-    //   svgPath: 'assets/python.svg'
-    // },
-    // {
-    //   title: 'HTML5',
-    //   svgPath: 'assets/html.svg'
-    // },
-    // {
-    //   title: 'CSS3',
-    //   svgPath: 'assets/css.svg'
-    // },
-    // {
-    //   title: 'Express',
-    //   svgPath: 'assets/express.svg'
-    // },
-    // {
-    //   title: 'MongoDB',
-    //   svgPath: 'assets/mongodb.svg'
-    // },
-    // {
-    //   title: 'PostgreSQL',
-    //   svgPath: 'assets/postgresql.svg'
-    // },
-    // {
-    //   title: 'Docker',
-    //   svgPath: 'assets/docker.svg'
-    // },
-    // {
-    //   title: 'Ubuntu',
-    //   svgPath: 'assets/ubuntu.svg'
-    // },
-    // {
-    //   title: 'Cypress',
-    //   svgPath: 'assets/cypress.svg'
-    // },
-    // {
-    //   title: 'Mocha',
-    //   svgPath: 'assets/mocha.svg'
-    // },
-    // {
-    //   title: 'Vite',
-    //   svgPath: 'assets/vite.svg'
-    // },
+    {
+      title: 'Angular',
+      svgPath: 'assets/angular.svg'
+
+    },
+    {
+      title: 'Django',
+      svgPath: 'assets/django.svg'
+    },
+    {
+      title: 'NodeJs',
+      svgPath: 'assets/nodejs.svg'
+    },
+    {
+      title: 'TypeScript',
+      svgPath: 'assets/typescript.svg'
+    },
+    {
+      title: 'JavaScript',
+      svgPath: 'assets/javascript.svg'
+    },
+    {
+      title: 'Java',
+      svgPath: 'assets/java.svg'
+    },
+    {
+      title: 'Python',
+      svgPath: 'assets/python.svg'
+    },
+    {
+      title: 'HTML5',
+      svgPath: 'assets/html.svg'
+    },
+    {
+      title: 'CSS3',
+      svgPath: 'assets/css.svg'
+    },
+    {
+      title: 'Express',
+      svgPath: 'assets/express.svg'
+    },
+    {
+      title: 'MongoDB',
+      svgPath: 'assets/mongodb.svg'
+    },
+    {
+      title: 'PostgreSQL',
+      svgPath: 'assets/postgresql.svg'
+    },
+    {
+      title: 'Docker',
+      svgPath: 'assets/docker.svg'
+    },
+    {
+      title: 'Ubuntu',
+      svgPath: 'assets/ubuntu.svg'
+    },
+    {
+      title: 'Cypress',
+      svgPath: 'assets/cypress.svg'
+    },
+    {
+      title: 'Mocha',
+      svgPath: 'assets/mocha.svg'
+    },
+    {
+      title: 'Vite',
+      svgPath: 'assets/vite.svg'
+    },
   ]
-  
+
   export const projects = [
     {
       title: 'Hackapet',
@@ -90,7 +89,7 @@ export const technologies = [
       title: 'Battleship'
     },
   ]
-  
+
   export const experience = [
     {
       title: 'Full Stack Developer',
@@ -98,14 +97,17 @@ export const technologies = [
       description: `Main web developer of an opensource, non-profit application for animal shelters in Valencia.
                     Learning from seniors and teaching to juniors.
                     Implementing clean code, agile development, and pair programming`,
-      date: 'Dec 2023 - Present'
+      date: 'Dec 2023 - Present',
+      tags: ['React', 'Django', 'PostgreSQL', 'Docker']
     },
     {
       title: 'Full Stack Developer',
       company: 'Imagina IT Solutions',
       description: `First work experience. Implementing new features to legacy project.
                     Vanilla PHP and MySQL.`,
-      date: 'Jun 2023 - Ago 2023'
+      date: 'Jun 2023 - Ago 2023',
+      tags: ['HTML', 'CSS', 'PHP', 'JavaScript', 'MySQL']
+
     },
     {
       title: 'Machine Operator',
@@ -116,7 +118,7 @@ export const technologies = [
       date: '2019 - 2022'
     }
   ]
-  
+
   export const studies = [
     {
       title: 'Web Application Development',

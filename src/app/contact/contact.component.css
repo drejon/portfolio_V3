@@ -1,5 +1,6 @@
 header {
   display: flex;
+
   div {
 
     a {
@@ -32,14 +33,14 @@ header {
   header > h2, header > svg {
     align-self: center;
   }
-  
+
   header {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 
     section {
-      
+
       div {
         display: flex;
         justify-content: space-evenly;
@@ -66,6 +67,9 @@ header {
     flex-direction: column;
     width: 100%;
     width: 30vw;
+
+    position: sticky;
+    top: 0;
     /* align-items: center; */
 
     section {
@@ -75,8 +79,6 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
-
 
         button {
           background-color: var(--salmon);

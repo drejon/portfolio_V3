@@ -1,0 +1,15 @@
+<!-- <h1>Experience</h1> -->
+<section class="experience">
+  <div class="work" *ngFor="let work of experience">
+    <h2>{{ work.title }}</h2>
+    <h3>{{ work.company }}</h3>
+    <p>{{ work.description }}</p>
+    <section class="techs">
+      <span *ngFor="let tag of work.tags">
+        {{ tag }}
+      </span>
+    </section>
+    <h3>{{ work.date }}</h3>
+  </div>
+
+</section>

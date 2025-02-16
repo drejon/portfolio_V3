@@ -1,0 +1,19 @@
+.skills {
+  display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(54px, 1fr));
+
+    div {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      height: 48px;
+      padding: 0.25rem;
+
+      img {
+        width: 48px;
+        height: 48px;
+        padding: 0px;
+        aspect-ratio: auto;
+      }
+    }
+}

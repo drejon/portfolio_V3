@@ -4,6 +4,6 @@ import { BattleshipComponent } from './demos/battleship/battleship.component';
 
 export const routes: Routes = [
     { path: '', component: LandingComponent },
-    { path: 'demos/battleship', component: BattleshipComponent }
+    // { path: 'demos/battleship', component: BattleshipComponent }
     // { path: '', component: LandingComponent }
 ];

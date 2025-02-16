@@ -2,16 +2,14 @@
   display: grid;
   gap: 1rem;
   /* Adjust spacing between projects */
-  padding: 1rem;
+  padding: 1rem 0;
 
   article {
     background-color: var(--white);
     border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    margin: 0;
     text-align: center;
-    
+
     div {
       display: flex;
 

@@ -1,0 +1,22 @@
+.studies {
+  text-wrap: balance;
+  display: grid;
+  gap: 1rem;
+  .study {
+    border-left: var(--border-style);
+    height: fit-content;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .studies {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .studies {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}

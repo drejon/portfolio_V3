@@ -1,0 +1,37 @@
+.experience {
+  text-wrap: balance;
+
+  .work {
+    border-left: var(--border-style);
+    padding: 0 1rem;
+  }
+
+  .techs {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: fit-content;
+
+    span {
+      background-color: var(--clay); /* Optional: Makes each tech visible */
+      padding: 0.25rem 0.5rem; /* Adds space inside each span */
+      border-radius: var(--border-radius); /* Rounded edges */
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .work {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
