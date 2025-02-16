@@ -1,78 +1,78 @@
 export const technologies = [
     {
       title: 'React',
-      svgPath: 'assets/react.svg'
+      svgPath: './src/assets/react.svg'
+      // svgPath: './assets/react.svg'
     },
-    {
-      title: 'Angular',
-      svgPath: 'assets/angular.svg'
+    // {
+    //   title: 'Angular',
+    //   svgPath: 'assets/angular.svg'
   
-    },
-    {
-      title: 'Django',
-      svgPath: 'assets/django.svg'
-    },
-    {
-      title: 'NodeJs',
-      svgPath: 'assets/nodejs.svg'
-    },
-    {
-      title: 'TypeScript',
-      svgPath: 'assets/typescript.svg'
-    },
-    {
-      title: 'JavaScript',
-      svgPath: 'assets/javascript.svg'
-    },
-    {
-      title: 'Java',
-      svgPath: 'assets/java.svg'
-    },
-    {
-      title: 'Python',
-      svgPath: 'assets/python.svg'
-    },
-    {
-      title: 'HTML5',
-      svgPath: 'assets/html.svg'
-    },
-    {
-      title: 'CSS3',
-      svgPath: 'assets/css.svg'
-    },
-    {
-      title: 'Express',
-      svgPath: 'assets/express.svg'
-    },
-    {
-      title: 'MongoDB',
-      svgPath: 'assets/mongodb.svg'
-    },
-    {
-      title: 'PostgreSQL',
-      svgPath: 'assets/postgresql.svg'
-    },
-    {
-      title: 'Docker',
-      svgPath: 'assets/docker.svg'
-    },
-    {
-      title: 'Ubuntu',
-      svgPath: 'assets/ubuntu.svg'
-    },
-    {
-      title: 'Cypress',
-      svgPath: 'assets/cypress.svg'
-    },
-    {
-      title: 'Mocha',
-      svgPath: 'assets/mocha.svg'
-    },
-    {
-      title: 'Vite',
-      svgPath: 'assets/vite.svg'
-    },
-  
+    // },
+    // {
+    //   title: 'Django',
+    //   svgPath: 'assets/django.svg'
+    // },
+    // {
+    //   title: 'NodeJs',
+    //   svgPath: 'assets/nodejs.svg'
+    // },
+    // {
+    //   title: 'TypeScript',
+    //   svgPath: 'assets/typescript.svg'
+    // },
+    // {
+    //   title: 'JavaScript',
+    //   svgPath: 'assets/javascript.svg'
+    // },
+    // {
+    //   title: 'Java',
+    //   svgPath: 'assets/java.svg'
+    // },
+    // {
+    //   title: 'Python',
+    //   svgPath: 'assets/python.svg'
+    // },
+    // {
+    //   title: 'HTML5',
+    //   svgPath: 'assets/html.svg'
+    // },
+    // {
+    //   title: 'CSS3',
+    //   svgPath: 'assets/css.svg'
+    // },
+    // {
+    //   title: 'Express',
+    //   svgPath: 'assets/express.svg'
+    // },
+    // {
+    //   title: 'MongoDB',
+    //   svgPath: 'assets/mongodb.svg'
+    // },
+    // {
+    //   title: 'PostgreSQL',
+    //   svgPath: 'assets/postgresql.svg'
+    // },
+    // {
+    //   title: 'Docker',
+    //   svgPath: 'assets/docker.svg'
+    // },
+    // {
+    //   title: 'Ubuntu',
+    //   svgPath: 'assets/ubuntu.svg'
+    // },
+    // {
+    //   title: 'Cypress',
+    //   svgPath: 'assets/cypress.svg'
+    // },
+    // {
+    //   title: 'Mocha',
+    //   svgPath: 'assets/mocha.svg'
+    // },
+    // {
+    //   title: 'Vite',
+    //   svgPath: 'assets/vite.svg'
+    // },
   ]
   
   export const projects = [

@@ -15,10 +15,19 @@ header {
       color: var(--bg );
       background-color: var(--white);
     }
+
+    button {
+      font-family: shanti;
+    }
+
+    p {
+      font-family: shanti;
+      font-size: 24px;
+    }
   }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 768px) {
 
   header > h2, header > svg {
     align-self: center;
@@ -60,15 +69,21 @@ header {
     /* align-items: center; */
 
     section {
-      
+      width: 20rem;
       div {
         display: flex;
-        justify-content: space-arround;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
 
-        a {
-          margin: 0 auto;
+
+
+        button {
+          background-color: var(--salmon);
+          border: none;
+          border-radius: var(--border-radius);
+          padding: .3rem;
+          width: 5rem;
         }
       }
     }
