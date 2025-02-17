@@ -1,0 +1,32 @@
+p {
+  color: var(--grey);
+  text-wrap: balance;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+      display: flex;
+      flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* aside {
+      width: 42rem;
+  } */
+
+  main {
+      background-color: var(--bg);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 90vw;
+  }
+
+  header {
+    width: 30wv;
+  }
+}

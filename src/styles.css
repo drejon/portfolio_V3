@@ -1,37 +1,81 @@
 html {
-    --bg:#1D262C;
-    --accent: #FF0763;
-    --salmon: #DE6781;
-    --white: #EEF1F3;
-    --grey: #c3c9cd;
-    --blue: #2ca6a4;
-    --yellow: #F6AE2D;
-    --clay:rgb(144, 94, 94);
+  --bg: #1D262C;
+  --accent: #FF0763;
+  --salmon: #DE6781;
+  --white: #EEF1F3;
+  --grey: #c3c9cd;
+  --blue: #2ca6a4;
+  --yellow: #F6AE2D;
+  --clay: rgb(144, 94, 94);
 
-    --border-style: 2px solid var(--accent);
-    --border-radius: 0.25rem;
+  --gradient: linear-gradient(325deg, rgba(131, 94, 94, 1) 0%, rgba(186, 96, 116, 1) 50%, rgba(247, 87, 146, 1) 100%);
 
-    background-color: var(--bg);
-    color: var(--white);
-    font-size: 18px;
+  /* --gradient: linear-gradient(325deg, rgba(131,94,94,1) 0%, rgba(186,96,116,1) 64%, rgba(255,7,99,0.8658645587141106) 100%); */
 
-    a {
-        background-color: var(--accent);
-        border-radius: var(--border-radius);
-        color: var(--white);
-        padding: .4rem;
-        text-decoration: none;
-        transition: .33s cubic-bezier(0,.68,.58,.73);
-      }
-  
-      a:hover {
-        color: var(--bg );
-        background-color: var(--white);
-      }
+  --border-style: 2px solid var(--accent);
+  --border-radius: 0.25rem;
 
-    hr {
-        margin: 2rem 0;
+  background-color: var(--bg);
+  color: var(--white);
+  font-size: 18px;
+
+  a {
+    background-color: var(--accent);
+    border-radius: var(--border-radius);
+    color: var(--bg);
+    padding: .4rem;
+    text-decoration: none;
+    transition: .33s cubic-bezier(0, .68, .58, .73);
+  }
+
+  a:hover {
+    /* color: var(--white); */
+    background-color: var(--yellow);
+  }
+
+  button {
+    background-color: var(--salmon);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: shanti;
+    padding: .3rem;
+    transition: .33s cubic-bezier(0, .68, .58, .73);
+    width: 5rem;
+  }
+
+  button:hover {
+    background-color: var(--white);
+    cursor: pointer;
+  }
+
+  h1 {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  hr {
+    margin: 2rem 0;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: fit-content;
+
+    span {
+      background-color: var(--clay);
+      border-radius: var(--border-radius);
+      color: var(--white);
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
     }
+  }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* html, body { height: 100%; } */
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

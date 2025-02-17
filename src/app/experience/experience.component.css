@@ -23,24 +23,6 @@
       color: var(--grey);
     }
   }
-
-  .tags {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: space-between;
-    width: fit-content;
-
-    span {
-      background-color: var(--clay);
-      border-radius: var(--border-radius);
-      color: var(--white);
-      font-weight: bold;
-      padding: 0.25rem 0.5rem;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {

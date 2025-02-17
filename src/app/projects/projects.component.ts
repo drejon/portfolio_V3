@@ -12,5 +12,5 @@ import { projects } from '../../support/contents';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  projects: Array<any>  = projects
+  projects: Array<any> = projects
 }

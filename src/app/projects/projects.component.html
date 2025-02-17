@@ -3,12 +3,9 @@
   <article *ngFor="let project of projects">
     <h2>{{ project.title }}</h2>
     <div>
-      <a [href]=project.repo target="_blank">Code</a>
-      <a [href]=project.demo>Demo</a>
-      <a [href]=project.about>About</a>
-      <div class="tags">
-        <!-- <p  *ngFor="let tag of (project.tags)" class="tag">{{ tag }}</p> -->
-      </div>
+      <a *ngIf="project.repo" [href]=project.repo target="_blank">Code</a>
+      <a *ngIf="project.demo" [href]=project.demo>Demo</a>
+      <a *ngIf="project.about" [href]=project.about>About</a>
     </div>
   </article>
 </section>
