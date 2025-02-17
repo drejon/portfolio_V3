@@ -7,7 +7,7 @@ export const projects = [
   },
   {
     title: 'Battleship',
-    demo: '/demos/minesweeper',
+    demo: '/demos/battleship',
     about: '/about/minesweeper'
   },
   {

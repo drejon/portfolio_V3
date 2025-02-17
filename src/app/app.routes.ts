@@ -6,6 +6,6 @@ import { HackapetComponent } from './about/hackapet/hackapet.component';
 export const routes: Routes = [
     { path: '', component: LandingComponent },
     { path: 'about/hackapet', component: HackapetComponent },
-    // { path: 'demos/battleship', component: BattleshipComponent }
+    { path: 'demos/battleship', component: BattleshipComponent }
     // { path: '', component: LandingComponent }
 ];
