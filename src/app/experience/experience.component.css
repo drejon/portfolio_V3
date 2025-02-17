@@ -4,9 +4,27 @@
   .work {
     border-left: var(--border-style);
     padding: 0 1rem;
+
+    h2 {
+      color: var(--white);
+      margin-bottom: 0;
+    }
+
+    h3 {
+      color: var(--clay);
+      margin-top: .3rem;
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    p {
+      color: var(--grey);
+    }
   }
 
-  .techs {
+  .tags {
     /* background-color: red; */
     display: flex;
     flex-direction: row;
@@ -16,10 +34,11 @@
     width: fit-content;
 
     span {
-      background-color: var(--clay); /* Optional: Makes each tech visible */
-      padding: 0.25rem 0.5rem; /* Adds space inside each span */
-      border-radius: var(--border-radius); /* Rounded edges */
+      background-color: var(--clay);
+      border-radius: var(--border-radius);
+      color: var(--white);
       font-weight: bold;
+      padding: 0.25rem 0.5rem;
     }
   }
 }

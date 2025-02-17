@@ -2,21 +2,6 @@ header {
   display: flex;
 
   div {
-
-    a {
-      background-color: var(--accent);
-      border-radius: var(--border-radius);
-      color: var(--white);
-      padding: .4rem;
-      text-decoration: none;
-      transition: .33s cubic-bezier(0,.68,.58,.73);
-    }
-
-    a:hover {
-      color: var(--bg );
-      background-color: var(--white);
-    }
-
     button {
       font-family: shanti;
       transition: .33s cubic-bezier(0,.68,.58,.73);

@@ -1,11 +1,25 @@
 .studies {
-  text-wrap: balance;
+  /* text-wrap: balance; */
   display: grid;
   gap: 1rem;
+  
   .study {
     border-left: var(--border-style);
     height: fit-content;
     padding: 0 1rem;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    h3 {
+      color: var(--clay);
+    }
+
+    h4 {
+      color: var(--grey);
+      margin-bottom: 0;
+    }
   }
 }
 

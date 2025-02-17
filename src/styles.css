@@ -14,6 +14,24 @@ html {
     background-color: var(--bg);
     color: var(--white);
     font-size: 18px;
+
+    a {
+        background-color: var(--accent);
+        border-radius: var(--border-radius);
+        color: var(--white);
+        padding: .4rem;
+        text-decoration: none;
+        transition: .33s cubic-bezier(0,.68,.58,.73);
+      }
+  
+      a:hover {
+        color: var(--bg );
+        background-color: var(--white);
+      }
+
+    hr {
+        margin: 2rem 0;
+    }
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
