@@ -1,6 +1,14 @@
+a {
+  margin: 200rem 0;
+}
+
 p {
   color: var(--grey);
   text-wrap: balance;
+}
+
+section {
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -8,15 +16,9 @@ p {
       display: flex;
       flex-direction: column;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-
-  /* aside {
-      width: 42rem;
-  } */
-
   main {
       background-color: var(--bg);
       display: grid;
@@ -27,6 +29,6 @@ p {
   }
 
   header {
-    width: 30wv;
+    width: 48vw;
   }
 }

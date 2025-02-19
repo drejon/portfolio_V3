@@ -13,5 +13,6 @@ export const hackapet = {
 
     `Finaly, the third phase, involves a catching up system to ensure that the animal is adapting well to its new home and that the owner is happy with their new companion.`
   ],
-  tags: ['React', 'Django', 'Docker', 'PostgreSQL', 'Swagger', 'JWT', 'Pytest','Restful', 'TDD']
+  tags: ['React', 'Django', 'Docker', 'PostgreSQL', 'Swagger', 'JWT', 'Pytest','Restful', 'TDD'],
+  repo: 'https://github.com/hackapet-project',
 }

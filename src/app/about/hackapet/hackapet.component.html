@@ -6,6 +6,7 @@
       <p *ngFor="let paragraph of hackapet.description">
         {{ paragraph }}
       </p>
+      <a [href]=hackapet.repo>repository</a>
       <section class="tags">
         <span *ngFor="let tag of hackapet.tags">
           {{ tag }}
