@@ -8,13 +8,13 @@ export const projects = [
   {
     title: 'Battleship',
     demo: '/demos/battleship',
-    about: '/about/minesweeper'
+    // about: '/about/minesweeper'
   },
   {
     title: 'Minesweeper',
     repo: '',
-    demo: '/demos/minesweeper',
-    about: '/about/minesweeper',
+    // demo: '/demos/minesweeper',
+    // about: '/about/minesweeper',
   },
 ]
 
