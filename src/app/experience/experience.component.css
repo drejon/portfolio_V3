@@ -11,7 +11,7 @@
     }
 
     h3 {
-      color: var(--clay);
+      color: rgb(var(--clay));
       margin-top: .3rem;
     }
 

@@ -31,10 +31,20 @@ header {
     section {
       width: 100vw;
 
-      div {
+      div:first-child {
         display: flex;
         justify-content: space-evenly;
+      }
+
+      div {
         align-items: center;
+        /* border: var(--border-style); */
+        display: flex;
+        place-content: center;
+
+        button {
+          margin-right: 10px;
+        }
       }
     }
 
@@ -46,19 +56,28 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 30vw;
 
     position: sticky;
     top: 0;
 
     section {
       width: 24rem;
-      
-      div {
+
+      div:first-child {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+      }
+
+      div {
         align-items: center;
-        width: 100%;
+        border: var(--border-style);
+        display: flex;
+        border: 1px solid var(--accent);
+
+        button {
+          margin-right: 10px;
+        }
       }
     }
   }

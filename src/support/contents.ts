@@ -5,20 +5,31 @@ export const projects = [
     repo: 'https://github.com/hackapet-project/petsync-web',
     about: '/about/hackapet',
   },
-  {
-    title: 'Battleship',
-    demo: '/demos/battleship',
-    // about: '/about/minesweeper'
-  },
-  {
-    title: 'Minesweeper',
-    repo: '',
-    // demo: '/demos/minesweeper',
-    // about: '/about/minesweeper',
-  },
+  // {
+  //   title: 'Battleship',
+  //   demo: '/demos/battleship',
+  //   // about: '/about/minesweeper'
+  // },
+  // {
+  //   title: 'Minesweeper',
+  //   repo: '',
+  //   // demo: '/demos/minesweeper',
+  //   // about: '/about/minesweeper',
+  // },
 ]
 
 export const experience = [
+  {
+    title: 'Software Developer',
+    company: 'yesh³',
+    description: `
+      Developed the front, back, mobile app and vestacube software. Applying SOLID and Agile
+      principles with a clean architecture in all services. Integrated an EC2 instance of AWS.
+      Deployed with CI/CD using github actions.
+      `,
+    date: 'Apr 2025 - Present',
+    tags: ['Angular', 'Angular Ionic', 'Django', 'Django REST Framework', 'Python', 'PostgreSQL','Docker', 'Pytest', '0Auth', 'JWT']
+  },
   {
     title: 'Full Stack Developer',
     company: 'Hackapet',

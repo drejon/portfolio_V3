@@ -2,14 +2,14 @@
   display: grid;
   gap: 1rem;
   padding: 1rem 0;
-
+  /* aspect-ratio: 1/1; */
   article {
-    background: var(--gradient);
-    
-    filter: contrast(1.2);
+    background: rgb(var(--accent), 5%);
+    border: var(--border-style);
     border-radius: var(--border-radius);
     color: var(--white);
     display: flex;
+    filter: contrast(1.2);
     flex-direction: column;
     margin: 0;
     padding: 1rem;
