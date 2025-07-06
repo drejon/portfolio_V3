@@ -10,7 +10,7 @@ html {
   --clay: 163, 111, 111;
   
   --blue: #2ca6a4;
-  --yellow: #F6AE2D;
+  --yellow: 246, 174, 45;
 
   /* --gradient: linear-gradient(
     325deg,
@@ -54,12 +54,13 @@ html {
     padding: .4rem;
     text-decoration: none;
     transition: .33s cubic-bezier(0, .68, .58, .73);
+    
+    &:hover {
+      color: var(--bg);
+      background-color: rgba(var(--yellow));
+    }
   }
 
-  a:hover {
-    color: var(--bg);
-    background-color: var(--yellow);
-  }
 
   aside {
     margin-top: 1.3rem;

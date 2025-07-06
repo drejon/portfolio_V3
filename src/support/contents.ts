@@ -5,6 +5,12 @@ export const projects = [
     repo: 'https://github.com/hackapet-project/petsync-web',
     about: '/about/hackapet',
   },
+  {
+    title: 'Minesweeper',
+    // repo: 'https://github.com/hackapet-project/petsync-web',
+    about: '/about/hackapet',
+    demo: '/demos/minesweeper',
+  },
   // {
   //   title: 'Battleship',
   //   demo: '/demos/battleship',
