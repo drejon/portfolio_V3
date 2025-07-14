@@ -19,20 +19,25 @@
       <article>
         @for (cell of board; track $index) {
           <div
-            class="cell"
-            [class.revealed]="cell.revealed"
-            [class.mine]="cell.revealed && cell.hasMine"
-            [class.flagged]="cell.flagged"
-            (contextmenu)="toggleFlag(cell, $event)"
-            (click)="reveal(cell)"
+          class="cell"
+          [class.revealed]="cell.revealed"
+          [class.mine]="cell.revealed && cell.hasMine"
+          [class.flagged]="cell.flagged"
+          (contextmenu)="toggleFlag(cell, $event)"
+          (click)="reveal(cell)"
           >
-            {{ showCellContent(cell) }}
-          </div>
-          <!-- <div>{{cell.hasMine}}</div> -->
-          <!-- <div>{{cell.hasMine}}</div> -->
-        }
-      </article>
-    } @else {
+          {{ showCellContent(cell) }}
+
+          <!-- @if (cell.hasMine) {
+            {{ cell.hasMine }}
+          } -->
+        </div>
+        <!-- <div>{{cell.hasMine}}</div> -->
+      }
+    </article>
+      <button (click)="restart()">reset</button>
+
+  } @else {
       <button (click)="startGame()">start</button>
     }
   <!-- </section> -->

@@ -1,7 +1,7 @@
-import { 
-  Component, ElementRef, 
+import {
+  Component, ElementRef,
   OnInit, ViewChild,
-  HostListener 
+  HostListener
 } from '@angular/core';
 import { Game } from './logic/game';
 import { Cell } from './logic/cell';
@@ -18,20 +18,37 @@ export class MinesweeperComponent implements OnInit {
   public showHowToPlay = false;
   public hasStarted = false;
   private game: Game = new Game()
-  
+
   constructor() {}
 
   @HostListener('contextmenu', ['$event'])
   onRightClick(event: MouseEvent) {
     event.preventDefault(); // ✅ Prevent default context menu
   }
-  
+
   ngOnInit() {}
 
   reveal(cell: Cell) {
+    if (cell.hasMine) {
+      cell.reveal()
+
+      this.game.board.map(c =>{
+        if (c.hasMine) { c.reveal() }
+
+      })
+
+      return
+    }
+
+    if (cell.revealed || cell.flagged) return;
+
     if (!cell.flagged) {
-        cell.revealed = true;
-        // Add game logic: reveal neighbors, check win/loss, etc.
+        cell.reveal();
+
+        if (cell.nearMines === 0) {
+          const nearCells = this.game.getNearCells(cell.position)
+          nearCells.forEach(c => this.reveal(c))
+        }
       }
   }
 
@@ -45,15 +62,21 @@ export class MinesweeperComponent implements OnInit {
 
   showCellContent(cell: Cell): string | number | '' {
     if (cell.flagged && !cell.revealed) return '🚩';
-    if (!cell.revealed) return '';
+    if (!cell.revealed) return ``;
     if (cell.hasMine) return '💣';
     if (cell.nearMines > 0) return cell.nearMines;
     return '';
 }
-  
+
   startGame() {
     this.hasStarted = true;
     this.board = this.game.getBoard()
+  }
+
+  restart() {
+    this.hasStarted = true;
+    this.game = new Game();
+    this.board = this.game.board
   }
 
   toggleHowToPlay() {
