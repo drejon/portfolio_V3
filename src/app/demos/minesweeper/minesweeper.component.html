@@ -10,11 +10,19 @@
       </p>
       <button (click)="toggleHowToPlay()">Close</button>
     </dialog>
+
+    <dialog #gameOver (click)="$event.stopPropagation()">
+      <div>
+        <h2>You {{ referee.condition ? 'Win': 'Lose' }}!</h2>
+        
+        <button (click)="reset()">play again</button>
+        <a href="">return</a>
+      </div>
+    </dialog>
     @if(showHowToPlay) {
       <div class="modal-backdrop" (click)="toggleHowToPlay()"></div>
     }
   </section>
-  <!-- <section> -->
     @if (hasStarted) {
       <article>
         @for (cell of board; track $index) {
@@ -27,15 +35,15 @@
             (click)="reveal(cell)"
           >
             {{ showCellContent(cell) }}
+
           </div>
-          <!-- <div>{{cell.hasMine}}</div> -->
-          <!-- <div>{{cell.hasMine}}</div> -->
         }
       </article>
+      <button (click)="reset()">restart</button>
     } @else {
       <button (click)="startGame()">start</button>
     }
-  <!-- </section> -->
-  <button (click)="toggleHowToPlay()">How to Play</button>
+
+    <button (click)="toggleHowToPlay()">How to Play</button>
   <a href="">return</a>
 </main>

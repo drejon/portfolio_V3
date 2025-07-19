@@ -13,7 +13,7 @@
     }
 
     h3 {
-      color: var(--clay);
+      color: rgb(var(--clay));
     }
 
     h4 {

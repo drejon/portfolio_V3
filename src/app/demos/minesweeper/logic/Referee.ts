@@ -2,15 +2,22 @@ import { Game } from "./game";
 
 export class Referee {
   public game: Game | null = null
-  public hasUserWon: boolean | null = null
   
   constructor(game: Game) {
     this.game = game
   }
 
-  public computeGameStatus(win: boolean, lose: boolean): boolean | null {
-    if (win && !lose) return true;
-    if (!win && lose) return false;
+  public computeGameStatus(win: boolean, lose: boolean) {
+    if (win && !lose) {
+      this.game?.setGameStatus(true)
+      return true
+    };
+    
+    if (!win && lose) {
+      this.game?.setGameStatus(true)
+      return false
+    };
+
     return null;
   }
   
@@ -32,12 +39,14 @@ export class Referee {
   private checkIfWin(): boolean {
     const board = this.game?.getBoard() ?? []
     const numberOfMines = this.game?.getNumberOfMines()
+    const mines = this.game?.getMines() ?? []
 
-    const correctFlags = board.filter(c => c.flagged && c.hasMine).length
-    const totalFlags = board.filter( c => c.flagged ).length
-
-    const all_mines_have_been_flagged =correctFlags === totalFlags
-     
-    return all_mines_have_been_flagged
+    const flaggedCells = board.filter( c => c.flagged )
+    const flaggedMines = flaggedCells.filter(c => c.hasMine )
+    
+    const sameFlagsAsMines = flaggedMines.length === numberOfMines
+    const noExtraFlags = flaggedCells.length === flaggedMines.length;
+    
+    return sameFlagsAsMines && noExtraFlags && mines?.every(m => m.flagged)
   }
 }
