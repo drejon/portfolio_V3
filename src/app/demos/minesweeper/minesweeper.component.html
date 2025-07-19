@@ -1,0 +1,41 @@
+<main #fullscreenContainer>
+  <section>
+    <dialog #howToPlay (click)="$event.stopPropagation()">
+      <h2>How to Play Minesweeper</h2>
+      <p>
+        - Click on a cell to reveal it.<br>
+        - Avoid mines!<br>
+        - Numbers indicate how many adjacent mines.<br>
+        - Right-click (or long press) to flag a suspected mine.
+      </p>
+      <button (click)="toggleHowToPlay()">Close</button>
+    </dialog>
+    @if(showHowToPlay) {
+      <div class="modal-backdrop" (click)="toggleHowToPlay()"></div>
+    }
+  </section>
+  <!-- <section> -->
+    @if (hasStarted) {
+      <article>
+        @for (cell of board; track $index) {
+          <div
+            class="cell"
+            [class.revealed]="cell.revealed"
+            [class.mine]="cell.revealed && cell.hasMine"
+            [class.flagged]="cell.flagged"
+            (contextmenu)="toggleFlag(cell, $event)"
+            (click)="reveal(cell)"
+          >
+            {{ showCellContent(cell) }}
+          </div>
+          <!-- <div>{{cell.hasMine}}</div> -->
+          <!-- <div>{{cell.hasMine}}</div> -->
+        }
+      </article>
+    } @else {
+      <button (click)="startGame()">start</button>
+    }
+  <!-- </section> -->
+  <button (click)="toggleHowToPlay()">How to Play</button>
+  <a href="">return</a>
+</main>

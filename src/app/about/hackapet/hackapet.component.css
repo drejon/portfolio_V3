@@ -1,0 +1,36 @@
+a {
+  margin: 200rem 0;
+}
+
+p {
+  color: var(--grey);
+  text-wrap: balance;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 380px) {
+  main {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+      background-color: var(--bg);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 90vw;
+  }
+
+  header {
+    width: 48vw;
+  }
+}

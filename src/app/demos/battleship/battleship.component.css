@@ -1,0 +1,32 @@
+main {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  header {
+    background-color: aqua;
+
+    section {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+
+    .tile {
+      background-color: rgb(126, 126, 197);
+      border: 1px solid black;
+      height: 42px;
+      width: 42px;
+    }
+  }
+}

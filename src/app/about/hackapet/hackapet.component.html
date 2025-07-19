@@ -1,0 +1,17 @@
+<main>
+  <app-contact/>
+  <aside>
+    <header>
+      <h1><u>{{ hackapet.title }}</u></h1>
+      <p *ngFor="let paragraph of hackapet.description">
+        {{ paragraph }}
+      </p>
+      <a [href]=hackapet.repo>repository</a>
+      <section class="tags">
+        <span *ngFor="let tag of hackapet.tags">
+          {{ tag }}
+        </span>
+      </section>
+    </header>
+  </aside>
+</main>

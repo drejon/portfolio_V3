@@ -1,0 +1,11 @@
+<!-- <h2>Projects</h2> -->
+<section class="projects">
+  <article *ngFor="let project of projects">
+    <h2>{{ project.title }}</h2>
+    <div>
+      <a *ngIf="project.repo" [href]=project.repo target="_blank">Code</a>
+      <a *ngIf="project.demo" [href]=project.demo>Demo</a>
+      <a *ngIf="project.about" [href]=project.about>About</a>
+    </div>
+  </article>
+</section>
