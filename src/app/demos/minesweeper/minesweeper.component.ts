@@ -3,6 +3,7 @@ import {
   OnInit, ViewChild,
   HostListener 
 } from '@angular/core';
+import JSConfetti from 'js-confetti'
 import { Game } from './logic/game';
 import { Cell } from './logic/cell';
 import { Referee } from './logic/Referee';
@@ -22,7 +23,10 @@ export class MinesweeperComponent implements OnInit {
   public hasStarted = false;
   private game: Game = new Game()
   public referee: Referee = new Referee(this.game)
-  constructor() {}
+  public confetti: JSConfetti = new JSConfetti()
+  constructor() {
+    this.confetti.clearCanvas()
+  }
 
   @HostListener('contextmenu', ['$event'])
   onRightClick(event: MouseEvent) {
@@ -103,6 +107,7 @@ export class MinesweeperComponent implements OnInit {
     console.log('status', status)
     if (status) {
       this.game.setGameStatus(true)
+      this.confetti.addConfetti()
       this.openGameOverModal()
     }
     // console.log('Flag', status)
