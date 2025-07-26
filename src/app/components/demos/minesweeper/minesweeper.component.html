@@ -1,14 +1,13 @@
 <main #fullscreenContainer>
   <section>
     <dialog #howToPlay (click)="$event.stopPropagation()">
-      <h2>How to Play Minesweeper</h2>
-      <p>
-        - Click on a cell to reveal it.<br>
-        - Avoid mines!<br>
-        - Numbers indicate how many adjacent mines.<br>
-        - Right-click (or long press) to flag a suspected mine.
-      </p>
-      <button (click)="toggleHowToPlay()">Close</button>
+      <div>
+        <h2>How to Play Minesweeper</h2>
+        <span>- Click on a cell to reveal it. Avoid mines!</span>
+        <span>- Numbers indicate how many adjacent mines</span>
+        <span>- Right-click (or long press) to flag a suspected mine</span>
+        <button (click)="toggleHowToPlay()">Close</button>
+      </div>
     </dialog>
 
     <dialog #gameOver (click)="$event.stopPropagation()">

@@ -32,8 +32,12 @@ export class MinesweeperComponent implements OnInit {
   onRightClick(event: MouseEvent) {
     event.preventDefault(); // ✅ Prevent default context menu
   }
+
+  // ngAfterViewInit() {
+  //   this.openGameOverModal()
+  // }
   
-  ngOnInit() {}
+  ngOnInit() { }
 
   reset() {
     this.closeGameOverModal()
@@ -47,23 +51,20 @@ export class MinesweeperComponent implements OnInit {
   closeGameOverModal() {
     const dialog = this.gameOver.nativeElement;
     
-    if (dialog.open) {
-      dialog.close()
-    } else {
-    }
+    if (dialog.open) { dialog.close() }
   }
 
   openGameOverModal() {
-    // console.log('GAME STATUS', this.game.isFinished)
+    console.log('OPEN MODAL', this.game.isFinished)
     const dialog = this.gameOver.nativeElement;
 
-    try {
-      if (this.game.isFinished && !dialog.open) {
-        dialog.showModal();
-      }
-    } catch (e) {
-      console.warn('Dialog showModal error:', e);
-    }
+    // try {
+      // if (this.game.isFinished && !dialog.open) {
+    dialog.showModal();
+      // }
+    // } catch (e) {
+    //   console.warn('Dialog showModal error:', e);
+    // }
   }
 
   reveal(cell: Cell) {
@@ -104,7 +105,7 @@ export class MinesweeperComponent implements OnInit {
     cell.flagged = !cell.flagged;
     const status = this.referee.condition
 
-    console.log('status', status)
+    // console.log('status', status)
     if (status) {
       this.game.setGameStatus(true)
       this.confetti.addConfetti()

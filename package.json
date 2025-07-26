@@ -23,6 +23,7 @@
     "@angular/router": "^19.1.0",
     "js-confetti": "^0.12.0",
     "rxjs": "~7.8.0",
+    "three": "^0.178.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
@@ -33,6 +34,7 @@
     "@types/chai": "^5.0.1",
     "@types/jasmine": "~5.1.0",
     "@types/mocha": "^10.0.10",
+    "@types/three": "^0.178.1",
     "chai": "^5.2.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",

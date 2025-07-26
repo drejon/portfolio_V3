@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { projects } from '../../support/contents';
+import { projects } from '../../../support/contents';
+// import { projects } from '../../support/contents';
 
 @Component({
   selector: 'app-projects',

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { technologies } from '../../support/contents';
+import { technologies } from '../../../support/contents';
+// import { technologies } from '../../support/contents';
 
 @Component({
   selector: 'app-skills',

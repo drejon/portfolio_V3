@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { studies } from '../../../support/contents';
 
-import { studies } from '../../support/contents';
 
 @Component({
   selector: 'app-studies',

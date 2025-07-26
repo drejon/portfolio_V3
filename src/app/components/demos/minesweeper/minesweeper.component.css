@@ -2,6 +2,29 @@ button {
   width: 30%;
 }
 
+dialog {
+  background: var(--bg);
+  border: none;
+  border-radius: 8px;
+  color: var(--beige);
+  margin: auto;
+  padding: 1em;
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    /* place-content: center; */
+    margin: 0 auto;
+    gap: 1em;
+
+    
+  }
+}
+
 div, div.cell.flagged {
   display: flex;
   place-content: center;
@@ -19,13 +42,14 @@ main {
   place-content: center;
   min-height: 100vh;
   overflow: hidden;
+  
   article {
     width: 80vw;
     max-width: 550px;
   }
 }
 
-@media (min-width: 360px) {
+/* @media screen and (min-width: 360px) {
   main {
     article {
       div {
@@ -35,10 +59,51 @@ main {
       }
     }
   }
+} */
+
+@media screen and (max-width: 750px) {
+  dialog {
+    width: 75%;
+    height: fit-content;
+    
+    div {
+      width: fit-content;
+      font-size: 18px;
+      text-wrap: balance;
+      padding: .3em;
+      
+      span {
+        margin-left: 0;
+        display: flex;
+        place-self: left;
+      }
+    }
+  }
 }
 
-@media (min-width: 750px) {
+@media screen and (max-width: 1250px) {
+  dialog {
+    width: 50%;
+    height: fit-content;
+    
+    div {
+      width: fit-content;
+      font-size: 18px;
+      text-wrap: balance;
+      padding: .3em;
+      
+      span {
+        margin-left: 0;
+        display: flex;
+        place-self: left;
+      }
 
+      button {
+        /* background-color: red; */
+        width: 100%;
+      }
+    }
+  }
 }
 
 main {
@@ -71,33 +136,7 @@ main {
 
 }
 
-dialog {
-  background: var(--bg);
-  border: none;
-  border-radius: 8px;
-  color: var(--beige);
-  max-width: 90%;
-  margin: auto;
-  padding: 1.5rem;
-  text-align: left;
-  width: 20%;
-  /* height: 30%; */
 
-  &::backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    gap: 1em;
-    buton {
-      width: fit-content;
-      /* margin: 1em 0; */
-    }
-  }
-}
 
 .modal-backdrop {
   position: fixed;
