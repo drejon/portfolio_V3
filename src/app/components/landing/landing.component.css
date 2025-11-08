@@ -1,9 +1,14 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 364px) {
 	main {
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
 		width: 80vw;
+
+		aside {
+			/* width: 10px; */
+			/* background-color: red; */
+		}
 	}
 
 }

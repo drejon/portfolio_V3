@@ -1,6 +1,10 @@
 header {
   display: flex;
-  
+  text-wrap: balance;
+  /* background-color: red; */
+  flex-wrap: wrap;
+  /* text-align: center; */
+  width: 80vw;
   div {
     p {
       font-family: shanti;
@@ -18,22 +22,25 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-
-  header{
-    align-items: center;
-
-  }
   
   header {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    
+    place-content: center;
+    text-align: center;
+    /* place-self: center; */
+    /* background-color: red; */
+    /* width: 60%; */
+
     section {
-      width: 100vw;
+      /* width: 100vw; */
 
       div:first-child {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: .3em;
+        /* justify-content: space-around; */
       }
 
       div {
