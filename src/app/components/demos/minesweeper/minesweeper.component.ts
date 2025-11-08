@@ -1,7 +1,7 @@
-import { 
-  Component, ElementRef, 
+import {
+  Component, ElementRef,
   OnInit, ViewChild,
-  HostListener 
+  HostListener
 } from '@angular/core';
 import JSConfetti from 'js-confetti'
 import { Game } from './logic/game';
@@ -36,7 +36,7 @@ export class MinesweeperComponent implements OnInit {
   // ngAfterViewInit() {
   //   this.openGameOverModal()
   // }
-  
+
   ngOnInit() { }
 
   reset() {
@@ -50,7 +50,7 @@ export class MinesweeperComponent implements OnInit {
 
   closeGameOverModal() {
     const dialog = this.gameOver.nativeElement;
-    
+
     if (dialog.open) { dialog.close() }
   }
 
@@ -59,9 +59,9 @@ export class MinesweeperComponent implements OnInit {
     const dialog = this.gameOver.nativeElement;
 
     // try {
-      // if (this.game.isFinished && !dialog.open) {
+    // if (this.game.isFinished && !dialog.open) {
     dialog.showModal();
-      // }
+    // }
     // } catch (e) {
     //   console.warn('Dialog showModal error:', e);
     // }
@@ -69,17 +69,17 @@ export class MinesweeperComponent implements OnInit {
 
   reveal(cell: Cell) {
     if (cell.revealed || cell.flagged) return;
-    
+
     if (cell.hasMine) {
       this.game.revealMines();
       this.game.setGameStatus(true);
       setTimeout(() => this.openGameOverModal());
       return;
     }
-    
+
     if (!cell.flagged) {
       cell.reveal();
-      
+
       if (cell.nearMines === 0) {
         const nearCells = this.game.getNearCells(cell.position)
         nearCells.forEach(c => this.reveal(c))
@@ -91,7 +91,7 @@ export class MinesweeperComponent implements OnInit {
     if (status !== null) {
       this.game.setGameStatus(true)
 
-      setTimeout(() => this.openGameOverModal()) 
+      setTimeout(() => this.openGameOverModal())
       return
     }
   }
@@ -99,7 +99,7 @@ export class MinesweeperComponent implements OnInit {
   toggleFlag(cell: Cell, event: MouseEvent) {
     event.preventDefault();
 
-    if (this.game.isFinished) return 
+    if (this.game.isFinished) return
     if (cell.revealed) return
     // console.log('Right click on cell:', cell);
     cell.flagged = !cell.flagged;
@@ -120,7 +120,7 @@ export class MinesweeperComponent implements OnInit {
     if (cell.hasMine) return '💣';
     if (cell.nearMines > 0) return cell.nearMines;
     return '';
-}
+  }
   startGame() {
     this.hasStarted = true;
     this.board = this.game.getBoard()
