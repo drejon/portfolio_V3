@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { CommonModule } from '@angular/common';
-import { PolyhedronComponent } from '../polyhedron/polyhedron.component';
+// import { PolyhedronComponent } from '../polyhedron/polyhedron.component';
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +9,7 @@ import { PolyhedronComponent } from '../polyhedron/polyhedron.component';
   imports: [
     // CommonModule,
     ClipboardModule,
-    PolyhedronComponent
+    // PolyhedronComponent
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

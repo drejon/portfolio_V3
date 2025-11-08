@@ -26,6 +26,15 @@ export const projects = [
 
 export const experience = [
   {
+    title: 'Frontend Developer',
+    company: 'SearchIT',
+    description: `
+      Working for Accenture and BBVA developing custom software.
+    `,
+    date: 'Nov 2025 - Present',
+    tags: ['Cells']
+  },
+  {
     title: 'Software Developer',
     company: 'yesh³',
     description: `
@@ -33,7 +42,7 @@ export const experience = [
       principles with a clean architecture in all services. Integrated an EC2 instance of AWS.
       Deployed with CI/CD using github actions.
       `,
-    date: 'Apr 2025 - Present',
+    date: 'Apr 2025 - Nov 2025',
     tags: ['Angular', 'Angular Ionic', 'Django', 'Django REST Framework', 'Python', 'PostgreSQL','Docker', 'Pytest', '0Auth', 'JWT']
   },
   {
